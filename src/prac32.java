@@ -21,7 +21,7 @@ public class prac32 {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         try{
             //alert
-            /*driver.get("https://the-internet.herokuapp.com/javascript_alerts");
+            driver.get("https://the-internet.herokuapp.com/javascript_alerts");
             driver.findElement(By.xpath("//button[text()=\"Click for JS Prompt\"]")).click();
             Alert alert = driver.switchTo().alert(); 
             System.out.println("Alert Message: "+ alert.getText()); 
@@ -75,7 +75,7 @@ public class prac32 {
             if(wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("message")))).getText().endsWith("enabled!"))
                 System.out.println("PASS");
             else
-                System.out.println("FAIL");*/
+                System.out.println("FAIL");
             //Action class
             driver.get("https://the-internet.herokuapp.com/drag_and_drop");
             WebElement first = driver.findElement(By.id("column-a")); 
