@@ -12,6 +12,7 @@ jobs:
         with:
           java-version: '21'
           distribution: temurin
-      - name: run java file
+      - name: compile java file
         run: javac src/prac32.java
+      - name: run java file
         run: java bin/prac32 
